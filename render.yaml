@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: ticket-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/auth/me
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_CLIENT_ID
+        sync: false
+      - key: DISCORD_CLIENT_SECRET
+        sync: false
+      - key: DISCORD_REDIRECT_URI
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: DASHBOARD_URL
+        sync: false
+      - key: TRANSCRIPT_URL
+        sync: false
+      - key: COOKIE_SECURE
+        value: "true"

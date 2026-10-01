@@ -1,0 +1,23 @@
+{
+  "name": "ticket-bot",
+  "version": "1.0.0",
+  "description": "Free production-ready Discord ticket bot with dashboard and transcripts.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "create-emojis": "node scripts/create-emojis.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.2.1",
+    "multer": "^2.0.2"
+  }
+}
